@@ -1,11 +1,25 @@
-body {
-  color: #757575;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  background-color: #ffffff;
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-text-color: #757575;
+  --main-title-color: #212121;
+  --secondary-text-color: #ffffff;
+  --secondary-text-background-color: rgba(47, 48, 58, 0.8);
+  --accent-color: #2196f3;
+  --background-main-color: #ffffff;
+  --background-secondary-color: #f5f4fa;
+  --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
+  --footer-background-color: #2f303a;
 }
 
-/* Разметка хэдэра */
+body {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  background-color: var(--background-main-color);
+}
+
+/*  хэдэр */
 
 .link {
   text-decoration: none;
@@ -21,18 +35,176 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .nav-list-link:hover,
 .nav-list-link:focus,
 .contact-list-link:hover,
 .contact-list-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contact-list-link {
-  color: #757575;
+  color: var(--main-text-color);
 }
 
-/* Разметка HERO секции */
+/*  HERO  */
+
+.hero {
+  background-color: var(--secondary-text-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.order-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: var(--secondary-text-color);
+}
+
+/* About*/
+
+.about .about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-title-color);
+}
+
+.about .about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* What we do section */
+
+.we-do-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+.we-do .we-do-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: var(--secondary-text-background-color);
+  color: var(--secondary-text-color);
+}
+
+/* Our team */
+
+.team {
+  background-color: var(--background-secondary-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+.team .team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+.team .team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.team .team-social-link:hover,
+.team .team-social-link:focus {
+  color: var(--accent-color);
+}
+
+/* Clients */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+.clients .clients-link:hover,
+.clients .clients-link:focus {
+  color: var(--accent-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer .footer-list-link-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-main-color);
+}
+
+.footer .footer-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-secondary-text-color);
+}
+
+.slogan {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.slogan .social-list-link:hover,
+.slogan .social-list-link:focus {
+  color: var(--accent-color);
+}
