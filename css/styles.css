@@ -10,6 +10,9 @@
   --background-secondary-color: #f5f4fa;
   --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
   --footer-background-color: #2f303a;
+  --logo-main-color: #2196f3;
+  --logo-header-color: #000000;
+  --logo-footer-color: #ffffff;
 }
 
 body {
@@ -19,7 +22,27 @@ body {
   background-color: var(--background-main-color);
 }
 
-/*  хэдэр */
+/*  logo */
+
+.header .web,
+.header .studio,
+.footer .web,
+.footer .studio {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-main-color);
+}
+
+.header .studio {
+  color: var(--logo-header-color);
+}
+
+.footer .studio {
+  color: var(--logo-footer-color);
+}
 
 .link {
   text-decoration: none;
@@ -28,6 +51,8 @@ body {
 .list {
   list-style: none;
 }
+
+/* Header */
 
 .nav-list-link,
 .contact-list-link {
