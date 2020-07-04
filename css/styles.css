@@ -208,3 +208,49 @@ body {
 .slogan .social-list-link:focus {
   color: var(--accent-color);
 }
+
+/* Portfolio */
+
+.examples .button-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--background-secondary-color);
+  color: var(--main-title-color);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--accent-color);
+}
+
+.examples-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+}
+
+.examples-list .examples-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.examples-list .examples-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.examples-list-link:hover,
+.examples-list-link:focus {
+  color: rgba(33, 150, 243, 0.9);
+}
